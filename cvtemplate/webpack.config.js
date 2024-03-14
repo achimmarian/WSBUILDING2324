@@ -16,6 +16,9 @@ const favicon = path.resolve(paths.source, 'images', 'favicon.ico');
 const myHeader = fs.readFileSync(paths.source + '/views/header.html');
 const myBanner = fs.readFileSync(paths.source + '/views/banner.html');
 const myFooter = fs.readFileSync(paths.source + '/views/footer.html');
+const myAbout = fs.readFileSync(paths.source + '/views/About.html');
+const myContact = fs.readFileSync(paths.source + '/views/Contact.html');
+
 module.exports = {
     stats: {
         errorDetails: true,
@@ -34,6 +37,8 @@ module.exports = {
             favicon: favicon,
             myHeader: myHeader,
             myBanner: myBanner,
+            myAbout: myAbout,
+            myContact: myContact,
             myFooter: myFooter,
             template: './src/index.html',
             filename: 'index.html',
